@@ -1,0 +1,111 @@
+=====append=======
+>>> lst = [1,2,3]
+>>> lst
+[1, 2, 3]
+>>> lst.append('a')
+>>> lst
+[1, 2, 3, 'a']
+>>> lst.append([4,'b'])
+>>> lst
+[1, 2, 3, 'a', [4, 'b']]
+>>> a=[1,23]
+>>> a
+[1, 23]
+>>> a.extend(['a','b','c'])
+>>> a
+[1, 23, 'a', 'b', 'c']
+======insert=======
+>>> b=[1,2,3]
+>>> b.insert(1,'b')
+>>> b
+[1, 'b', 2, 3]
+>>> b.pop() //보여주고 삭제(POP)
+3
+>>> b
+[1, 'b', 2]
+>>> b.pop(0)
+1
+>>> b
+['b', 2]
+>>> b.remove(2)
+>>> b
+['b', 4, 5]
+>>> b.remove('b')
+>>> b
+[4, 5]
+>>> b.clear()
+>>> b
+[]
+>>> lst
+[1, 2, 3, 'a', [4, 'b']]
+>>> del lst
+>>> lst
+Traceback (most recent call last):
+  File "<pyshell#30>", line 1, in <module>
+    lst
+NameError: name 'lst' is not defined
+>>> a
+[1, 23, 'a', 'b', 'c']
+>>> a.claer()
+Traceback (most recent call last):
+  File "<pyshell#32>", line 1, in <module>
+    a.claer()
+AttributeError: 'list' object has no attribute 'claer'
+>>> a.clear()
+>>> a
+[]
+>>> del a
+>>> a
+Traceback (most recent call last):
+  File "<pyshell#36>", line 1, in <module>
+    a
+NameError: name 'a' is not defined
+=====extend======
+>>> a=['Hong', 'Xiang', 'park']
+>>> a.append('kim')
+>>> a
+['Hong', 'Xiang', 'park', 'kim']
+>>> a.extent(['lee','lee'])
+Traceback (most recent call last):
+  File "<pyshell#40>", line 1, in <module>
+    a.extent(['lee','lee'])
+AttributeError: 'list' object has no attribute 'extent'
+>>> a.extend(['lee','lee'])
+>>> a
+['Hong', 'Xiang', 'park', 'kim', 'lee', 'lee']
+==============account===============
+>>> a.count('lee')
+2
+==============index================
+>>> a.index('Hong')
+0
+>>> a.index('lee')
+4
+>>> b=[1,3,2,4,5]
+==============reverse================
+>>> b.reverse()
+>>> b
+[5, 4, 2, 3, 1]
+==============sort================
+>>> b.sort()
+>>> b
+[1, 2, 3, 4, 5]
+>>> a.clear()
+>>> a
+[]
+>>> a=[1,3,2,4]
+>>> a
+[1, 3, 2, 4]
+=========sorted==============
+>>> a1=sorted(a)
+>>> a
+[1, 3, 2, 4]
+>>> a1
+[1, 2, 3, 4]
+>>> 
+
+[1, 2, 3, 4, 5]
+==공백으로 나눔==
+>>> aa=sorted("I am a student".split())
+>>> aa
+['I', 'a', 'am', 'student']
